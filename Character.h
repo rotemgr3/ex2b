@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include "Auxiliaries.h"
-
+#include "Exceptions.h"
+#include <memory>
+#include <vector>
 
 namespace mtm
 {
@@ -19,14 +21,19 @@ namespace mtm
             Character() = delete;
             Character(units_t health, units_t ammo, units_t range, units_t power, Team team) : health(health),
             ammo(ammo), range(range), power(power), team(team) {};
-            Character(Character& character);
+            Character(const Character& character) = default;
             virtual ~Character() = default;
             virtual Character& operator=(Character& character) = default;
-            virtual bool attack(int distance, Character& target) = 0;
+            virtual void attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
+                                const GridPoint& dst_coordinates) = 0;
+            virtual bool checkIfTargetIsOutOfRange(int distance) = 0;
             virtual void reload() = 0;
             virtual std::shared_ptr<Character> clone() const = 0;
             virtual int getMoveDistance() const = 0;
+            virtual char getTypeLetter() const = 0;
+            Team getTeam() const {return team;};
             friend class Soldier;
+            bool isDead() const {return health <= 0;};
     };
 }
 

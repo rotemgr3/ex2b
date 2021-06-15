@@ -8,17 +8,22 @@
 
 namespace mtm
 {
+    const char power_lifter_soldier = 'S';
+    const char cross_fitters_soldier = 's';
     class Soldier : public Character
     {
         public:
             Soldier() = delete;
             Soldier(units_t health, units_t ammo, units_t range, units_t power, Team team);
-            Soldier(Soldier& soldier) = default;
+            Soldier(const Soldier& soldier) : Character(soldier) {};
             ~Soldier() = default;
-            bool attack(int distance, Character& target) override;
+            void attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
+            const GridPoint& dst_coordinates) override;
             void reload() override;
             std::shared_ptr<Character> clone() const override;
             int getMoveDistance() const;
+            bool checkIfTargetIsOutOfRange(int distance);
+            char getTypeLetter() const override;
         private:
             const int move_distance = 3;
     };

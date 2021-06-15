@@ -1,72 +1,71 @@
 #ifndef EXCEPTIONS_H
 #define EXCEPTIONS_H
 
+#include <exception>
+#include <typeinfo>
+#include <string>
+
 namespace mtm
 {
     class Exception : public std::exception
     {
+        private:
+            const std::string error_message = "A game related error has occurred: ";
+            const std::string error_type;
         public:
-            Exception() = default;
-            ~Exception() = default;
-            virtual const char* what() const noexcept;
+            Exception(const std::string error_name) : error_type(error_name) {};
+            Exception() {};
+            ~Exception() {};
+            virtual const char* what() const noexcept override;
     };
-    class IllegalArgument : Exception
+    class IllegalArgument : public Exception
     {
         public:
-            IllegalArgument() = default;
+            IllegalArgument() : Exception("IllegalArgument") {};
             ~IllegalArgument() = default;
-            const char* what() const noexcept override;
     };
-    class IllegalCell : Exception   
+    class IllegalCell : public Exception   
     {
         public:
-            IllegalCell() = default;
+            IllegalCell() : Exception("IllegalCell") {};
             ~IllegalCell() = default;
-            const char* what() const noexcept override;
     };
-    class CellEmpty : Exception
+    class CellEmpty : public Exception
     {
         public:
-            CellEmpty() = default;
+            CellEmpty() : Exception("CellEmpty") {};
             ~CellEmpty() = default;
-            const char* what() const noexcept override;
     };
-    class MoveTooFar : Exception
+    class MoveTooFar : public Exception
     {
         public:
-            MoveTooFar() = default;
+            MoveTooFar() : Exception("MoveTooFar") {};
             ~MoveTooFar() = default;
-            const char* what() const noexcept override;
     };
-    class CellOccupied : Exception
+    class CellOccupied : public Exception
     {
         public:
-            CellOccupied() = default;
+            CellOccupied() : Exception("CellOccupied") {};
             ~CellOccupied() = default;
-            const char* what() const noexcept override;
     };
-    class OutOfRange : Exception
+    class OutOfRange : public Exception
     {
         public:
-            OutOfRange() = default;
+            OutOfRange() : Exception("OutOfRange") {};
             ~OutOfRange() = default;
-            const char* what() const noexcept override;
     };
-    class OutOfAmmo : Exception
+    class OutOfAmmo : public Exception
     {
         public:
-            OutOfAmmo() = default;
+            OutOfAmmo() : Exception("OutOfAmmo") {};
             ~OutOfAmmo() = default;
-            const char* what() const noexcept override;
     };
-    class IllegalTarget : Exception
+    class IllegalTarget : public Exception
     {
         public:
-            IllegalTarget() = default;
+            IllegalTarget() : Exception("IllegalTarget") {};
             ~IllegalTarget() = default;
-            const char* what() const noexcept override;
     };
 }
 
-
-#endif
+#endif /*EXCEPTIONS_H*/

@@ -8,16 +8,17 @@
 #include "Exceptions.h"
 #include "Character.h"
 #include "Soldier.h"
-#include "Medic.h"
-#include "Sniper.h"
+//#include "Medic.h"
+//#include "Sniper.h"
+#include <string>
 
 namespace mtm
 {
-    typedef std::vector<std::vector<std::shared_ptr<Character>>> board_t;
+    const char default_empty_cell = ' ';
     class Game
     {
         private:
-            board_t board;
+            std::vector<std::vector<std::shared_ptr<Character>>> board;
             int height;
             int width;
         public:
@@ -25,12 +26,13 @@ namespace mtm
             ~Game() = default;
             Game(const Game& game);
             Game& operator=(const Game& game);
-            void AddCharacter(const GridPoint& coordinates, std::shared_ptr<Character> character);
+            void addCharacter(const GridPoint& coordinates, std::shared_ptr<Character> character);
             static std::shared_ptr<Character> makeCharacter(CharacterType type, Team team,
                                                             units_t health, units_t ammo, 
                                                             units_t range, units_t power);
             void move(const GridPoint & src_coordinates, const GridPoint & dst_coordinates);
             void attack(const GridPoint & src_coordinates, const GridPoint & dst_coordinates);
+            void updateBoard();
             void reload(const GridPoint & coordinates);
             friend std::ostream& operator<<(std::ostream& os, const Game& game);
             bool isOver(Team* winningTeam=NULL) const;
