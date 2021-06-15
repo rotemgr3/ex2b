@@ -10,6 +10,9 @@ namespace mtm
 {
     const char power_lifter_soldier = 'S';
     const char cross_fitters_soldier = 's';
+    const units_t soldier_reload_supply = 3;
+    const int soldier_range_area_factor = 3;
+    const int soldier_power_factor = 2;
     class Soldier : public Character
     {
         public:
@@ -18,7 +21,7 @@ namespace mtm
             Soldier(const Soldier& soldier) : Character(soldier) {};
             ~Soldier() = default;
             void attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
-            const GridPoint& dst_coordinates) override;
+                        const GridPoint& src_coordinates, const GridPoint& dst_coordinates) override;
             void reload() override;
             std::shared_ptr<Character> clone() const override;
             int getMoveDistance() const;

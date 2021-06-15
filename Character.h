@@ -25,7 +25,7 @@ namespace mtm
             virtual ~Character() = default;
             virtual Character& operator=(Character& character) = default;
             virtual void attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
-                                const GridPoint& dst_coordinates) = 0;
+                                const GridPoint& src_coordinates, const GridPoint& dst_coordinates) = 0;
             virtual bool checkIfTargetIsOutOfRange(int distance) = 0;
             virtual void reload() = 0;
             virtual std::shared_ptr<Character> clone() const = 0;
@@ -33,6 +33,8 @@ namespace mtm
             virtual char getTypeLetter() const = 0;
             Team getTeam() const {return team;};
             friend class Soldier;
+            friend class Medic;
+            friend class Sniper;
             bool isDead() const {return health <= 0;};
     };
 }

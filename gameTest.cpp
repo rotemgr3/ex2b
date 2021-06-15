@@ -18,10 +18,10 @@ int main() {
 void example1() {
     std::cout << "------example 1------" << std::endl;
     Game g1(8,8);
-    //g1.addCharacter(GridPoint(1,1), Game::makeCharacter(CharacterType::MEDIC, Team::POWERLIFTERS, 10, 2, 4, 5));
-    //g1.addCharacter(GridPoint(1,4), Game::makeCharacter(CharacterType::SNIPER, Team::POWERLIFTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(1,1), Game::makeCharacter(CharacterType::MEDIC, Team::POWERLIFTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(1,4), Game::makeCharacter(CharacterType::SNIPER, Team::POWERLIFTERS, 10, 2, 4, 5));
     g1.addCharacter(GridPoint(6,1), Game::makeCharacter(CharacterType::SOLDIER, Team::CROSSFITTERS, 10, 2, 4, 5));
-    //g1.addCharacter(GridPoint(6,4), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(6,4), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
     std::cout << g1 << std::endl;
     g1.move(GridPoint(1,1), GridPoint(1,2));
     std::cout << g1 << std::endl;
@@ -48,7 +48,7 @@ void example1() {
     }
 
     g1.attack(GridPoint(3,2), GridPoint(6,1)); // now it can hit
-
+    
     g1.move(GridPoint(6,1), GridPoint(4,2));
     std::cout << g1 << std::endl;
 
@@ -101,7 +101,7 @@ void example1() {
     } catch (mtm::CellEmpty& e) {
         std::cout << e.what() << std::endl;
     }
-
+    
     assert(g1.isOver(&winning_team) == true);
     assert(winning_team == mtm::Team::POWERLIFTERS);
     std::cout << "isOver: " <<  g1.isOver(&winning_team) << std::endl;
@@ -112,10 +112,10 @@ void example2() {
     std::cout << "------example 2------" << std::endl;
     Game g1(5,10);
     g1.addCharacter(GridPoint(3,0), Game::makeCharacter(CharacterType::SOLDIER, Team::POWERLIFTERS, 20, 0, 3, 5));
-    //g1.addCharacter(GridPoint(2,6), Game::makeCharacter(CharacterType::SNIPER, Team::CROSSFITTERS, 10, 2, 4, 5));
-    //g1.addCharacter(GridPoint(3,8), Game::makeCharacter(CharacterType::SNIPER, Team::CROSSFITTERS, 10, 2, 4, 5));
-    //g1.addCharacter(GridPoint(3,6), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
-    //g1.addCharacter(GridPoint(4,6), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(2,6), Game::makeCharacter(CharacterType::SNIPER, Team::CROSSFITTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(3,8), Game::makeCharacter(CharacterType::SNIPER, Team::CROSSFITTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(3,6), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
+    g1.addCharacter(GridPoint(4,6), Game::makeCharacter(CharacterType::MEDIC, Team::CROSSFITTERS, 10, 2, 4, 5));
     std::cout << g1 << std::endl;
 
     try {
@@ -188,7 +188,7 @@ void example2() {
 
     g1.reload(GridPoint(3,3)); // now soldier has ammo
     g1.reload(GridPoint(3,3)); // can reload twice - no problem (more ammo)
-
+    
     g1.attack(GridPoint(3,3), GridPoint(3,6)); // medic dead, sniper not dead
     std::cout << g1 << std::endl;
 }

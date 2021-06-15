@@ -10,7 +10,7 @@ namespace mtm
     {}
     void Soldier::reload()
     {
-        ammo += 3;
+        ammo += soldier_reload_supply;
     }
     std::shared_ptr<Character> Soldier::clone() const
     {
@@ -25,10 +25,13 @@ namespace mtm
         return distance > range;
     }
     void Soldier::attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
-                        const GridPoint& dst_coordinates)
+                        const GridPoint& src_coordinates, const GridPoint& dst_coordinates)
     {
         if(ammo <= 0){
             throw mtm::OutOfAmmo();
+        }
+        if(src_coordinates.col != dst_coordinates.col && src_coordinates.row != dst_coordinates.row){
+            throw mtm::IllegalTarget();
         }
         std::vector<std::vector<std::shared_ptr<Character>>>::iterator row;
         std::vector<std::shared_ptr<Character>>::iterator col;
@@ -37,7 +40,7 @@ namespace mtm
                 int row_index = std::distance(board.begin(),row);
                 int col_index = std::distance(row->begin() ,col);
                 int dist = GridPoint::distance(dst_coordinates, GridPoint(row_index, col_index));
-                if(dist > ceil(range/3)){
+                if(dist > ceil( ((double)range) / soldier_range_area_factor)){
                     continue;
                 }
                 if(!(*col)){
@@ -50,10 +53,11 @@ namespace mtm
                     (*col)->health -= power;
                 }
                 else{
-                    (*col)->health -= ceil(power/2);
+                    (*col)->health -= ceil( ((double)power) / soldier_power_factor);
                 }
             }
-        }           
+        }
+        ammo--;           
    }
    char Soldier::getTypeLetter() const
    {

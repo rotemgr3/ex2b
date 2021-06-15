@@ -20,7 +20,9 @@ namespace mtm
         board.resize(height, std::vector<std::shared_ptr<Character>>(width));
         for(int i = 0; i < height; i++){
             for(int j = 0; j < width; j++){
-                board[i][j] = game.board[i][j]->clone();
+                if(game.board[i][j]){
+                    board[i][j] = game.board[i][j]->clone();
+                }
             }
         }
     }
@@ -46,18 +48,18 @@ namespace mtm
                                                     units_t health, units_t ammo, 
                                                     units_t range, units_t power)
     {
-        if(health <= 0 || ammo < 0 || range < 0 || power < 0){
+        if(health <= 0 || range < 0 || power < 0){//check if ammo should be >= 0
             throw mtm::IllegalArgument();
         }
         if(type == SOLDIER){
             return std::shared_ptr<Character>(new Soldier(health, ammo, range, power, team));
         }
-      /*  if(type == MEDIC){
+        if(type == MEDIC){
             return std::shared_ptr<Character>(new Medic(health, ammo, range, power, team));
         }
         if(type == SNIPER){
             return std::shared_ptr<Character>(new Sniper(health, ammo, range, power, team));
-        }*/
+        }
         throw mtm::IllegalArgument();//shouldn't get here!
     }
     void Game::move(const GridPoint & src_coordinates, const GridPoint & dst_coordinates)
@@ -72,7 +74,7 @@ namespace mtm
             throw mtm::CellEmpty();
         }
         int dist = GridPoint::distance(src_coordinates, dst_coordinates);
-        if(board[src_coordinates.row][src_coordinates.col]->getMoveDistance() > dist){
+        if(board[src_coordinates.row][src_coordinates.col]->getMoveDistance() < dist){
             throw mtm::MoveTooFar();
         }
         if(board[dst_coordinates.row][dst_coordinates.col]){
@@ -95,7 +97,7 @@ namespace mtm
         if(board[src_coordinates.row][src_coordinates.col]->checkIfTargetIsOutOfRange(dist)){
             throw mtm::OutOfRange();
         }
-        board[src_coordinates.row][src_coordinates.col]->attack(board, dst_coordinates);
+        board[src_coordinates.row][src_coordinates.col]->attack(board, src_coordinates, dst_coordinates);
         this->updateBoard();
     }
     void Game::updateBoard()
@@ -104,7 +106,7 @@ namespace mtm
         std::vector<std::shared_ptr<Character>>::iterator col;
         for (row = board.begin(); row != board.end(); row++) {
             for (col = row->begin(); col != row->end(); col++) {
-                if((*col)->isDead()){
+                if((*col) && (*col)->isDead()){
                     col->reset();
                 }
             }
