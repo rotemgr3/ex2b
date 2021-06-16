@@ -167,6 +167,33 @@ Auxiliaries.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.s
 .PHONY : Auxiliaries.cpp.s
 
+Character.o: Character.cpp.o
+
+.PHONY : Character.o
+
+# target to build an object file
+Character.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Character.cpp.o
+.PHONY : Character.cpp.o
+
+Character.i: Character.cpp.i
+
+.PHONY : Character.i
+
+# target to preprocess a source file
+Character.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Character.cpp.i
+.PHONY : Character.cpp.i
+
+Character.s: Character.cpp.s
+
+.PHONY : Character.s
+
+# target to generate assembly for a file
+Character.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Character.cpp.s
+.PHONY : Character.cpp.s
+
 Exceptions.o: Exceptions.cpp.o
 
 .PHONY : Exceptions.o
@@ -220,6 +247,60 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Game.cpp.s
 .PHONY : Game.cpp.s
+
+Medic.o: Medic.cpp.o
+
+.PHONY : Medic.o
+
+# target to build an object file
+Medic.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Medic.cpp.o
+.PHONY : Medic.cpp.o
+
+Medic.i: Medic.cpp.i
+
+.PHONY : Medic.i
+
+# target to preprocess a source file
+Medic.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Medic.cpp.i
+.PHONY : Medic.cpp.i
+
+Medic.s: Medic.cpp.s
+
+.PHONY : Medic.s
+
+# target to generate assembly for a file
+Medic.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Medic.cpp.s
+.PHONY : Medic.cpp.s
+
+Sniper.o: Sniper.cpp.o
+
+.PHONY : Sniper.o
+
+# target to build an object file
+Sniper.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Sniper.cpp.o
+.PHONY : Sniper.cpp.o
+
+Sniper.i: Sniper.cpp.i
+
+.PHONY : Sniper.i
+
+# target to preprocess a source file
+Sniper.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Sniper.cpp.i
+.PHONY : Sniper.cpp.i
+
+Sniper.s: Sniper.cpp.s
+
+.PHONY : Sniper.s
+
+# target to generate assembly for a file
+Sniper.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Sniper.cpp.s
+.PHONY : Sniper.cpp.s
 
 Soldier.o: Soldier.cpp.o
 
@@ -287,12 +368,21 @@ help:
 	@echo "... Auxiliaries.o"
 	@echo "... Auxiliaries.i"
 	@echo "... Auxiliaries.s"
+	@echo "... Character.o"
+	@echo "... Character.i"
+	@echo "... Character.s"
 	@echo "... Exceptions.o"
 	@echo "... Exceptions.i"
 	@echo "... Exceptions.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... Medic.o"
+	@echo "... Medic.i"
+	@echo "... Medic.s"
+	@echo "... Sniper.o"
+	@echo "... Sniper.i"
+	@echo "... Sniper.s"
 	@echo "... Soldier.o"
 	@echo "... Soldier.i"
 	@echo "... Soldier.s"

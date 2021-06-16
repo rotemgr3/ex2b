@@ -11,8 +11,23 @@
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/Character.cpp.o -c /home/rotem.green/mtm/ex2b/Character.cpp",
+  "file": "/home/rotem.green/mtm/ex2b/Character.cpp"
+},
+{
+  "directory": "/home/rotem.green/mtm/ex2b/build",
   "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/Soldier.cpp.o -c /home/rotem.green/mtm/ex2b/Soldier.cpp",
   "file": "/home/rotem.green/mtm/ex2b/Soldier.cpp"
+},
+{
+  "directory": "/home/rotem.green/mtm/ex2b/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/Medic.cpp.o -c /home/rotem.green/mtm/ex2b/Medic.cpp",
+  "file": "/home/rotem.green/mtm/ex2b/Medic.cpp"
+},
+{
+  "directory": "/home/rotem.green/mtm/ex2b/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/Sniper.cpp.o -c /home/rotem.green/mtm/ex2b/Sniper.cpp",
+  "file": "/home/rotem.green/mtm/ex2b/Sniper.cpp"
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",

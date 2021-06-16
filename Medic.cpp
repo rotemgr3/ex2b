@@ -1,29 +1,19 @@
 #include "Medic.h"
-#include <assert.h>
 #include <cmath>
 #include <vector>
 
 namespace mtm
 {
-    Medic::Medic(units_t health, units_t ammo, units_t range, units_t power, Team team) : Character(health, ammo,
-                                                                                        range, power, team)
+    Medic::Medic(units_t health, units_t ammo, units_t range, units_t power, Team team) : 
+                Character(health, ammo, range, power, team, power_lifter_medic, cross_fitters_medic,
+                        medic_reload_supply, medic_move_distance)
     {}
-    void Medic::reload()
-    {
-        ammo += medic_reload_supply;
-    }
+
     std::shared_ptr<Character> Medic::clone() const
     {
         return std::shared_ptr<Character>(new Medic(*this));
     }
-    int Medic::getMoveDistance() const
-    {
-        return move_distance;
-    }
-    bool Medic::checkIfTargetIsOutOfRange(int distance)
-    {
-        return distance > range;
-    }
+
     void Medic::attack(std::vector<std::vector<std::shared_ptr<Character>>>& board, 
                         const GridPoint& src_coordinates, const GridPoint& dst_coordinates)
     {
@@ -45,11 +35,4 @@ namespace mtm
             ammo--;
         }
     }    
-    char Medic::getTypeLetter() const
-    {
-       if(team == POWERLIFTERS){
-           return power_lifter_medic;
-       }
-       return cross_fitters_medic;
-    }
 }

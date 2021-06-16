@@ -4,6 +4,11 @@
 CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.o: ../Auxiliaries.cpp
 CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.o: ../Auxiliaries.h
 
+CMakeFiles/ex2b_test.dir/Character.cpp.o: ../Auxiliaries.h
+CMakeFiles/ex2b_test.dir/Character.cpp.o: ../Character.cpp
+CMakeFiles/ex2b_test.dir/Character.cpp.o: ../Character.h
+CMakeFiles/ex2b_test.dir/Character.cpp.o: ../Exceptions.h
+
 CMakeFiles/ex2b_test.dir/Exceptions.cpp.o: ../Exceptions.cpp
 CMakeFiles/ex2b_test.dir/Exceptions.cpp.o: ../Exceptions.h
 
@@ -12,7 +17,21 @@ CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Character.h
 CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Exceptions.h
 CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Game.h
+CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Medic.h
+CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Sniper.h
 CMakeFiles/ex2b_test.dir/Game.cpp.o: ../Soldier.h
+
+CMakeFiles/ex2b_test.dir/Medic.cpp.o: ../Auxiliaries.h
+CMakeFiles/ex2b_test.dir/Medic.cpp.o: ../Character.h
+CMakeFiles/ex2b_test.dir/Medic.cpp.o: ../Exceptions.h
+CMakeFiles/ex2b_test.dir/Medic.cpp.o: ../Medic.cpp
+CMakeFiles/ex2b_test.dir/Medic.cpp.o: ../Medic.h
+
+CMakeFiles/ex2b_test.dir/Sniper.cpp.o: ../Auxiliaries.h
+CMakeFiles/ex2b_test.dir/Sniper.cpp.o: ../Character.h
+CMakeFiles/ex2b_test.dir/Sniper.cpp.o: ../Exceptions.h
+CMakeFiles/ex2b_test.dir/Sniper.cpp.o: ../Sniper.cpp
+CMakeFiles/ex2b_test.dir/Sniper.cpp.o: ../Sniper.h
 
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Auxiliaries.h
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Character.h
@@ -24,6 +43,8 @@ CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Auxiliaries.h
 CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Character.h
 CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Exceptions.h
 CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Game.h
+CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Medic.h
+CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Sniper.h
 CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Soldier.h
 CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../gameTest.cpp
 
