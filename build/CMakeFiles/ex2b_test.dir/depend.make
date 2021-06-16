@@ -39,12 +39,12 @@ CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Exceptions.h
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Soldier.cpp
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Soldier.h
 
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Auxiliaries.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Character.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Exceptions.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Game.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Medic.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Sniper.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../Soldier.h
-CMakeFiles/ex2b_test.dir/gameTest.cpp.o: ../gameTest.cpp
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Auxiliaries.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Character.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Exceptions.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Game.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Medic.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Sniper.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../Soldier.h
+CMakeFiles/ex2b_test.dir/main.cpp.o: ../main.cpp
 

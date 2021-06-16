@@ -6,8 +6,8 @@
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",
-  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/gameTest.cpp.o -c /home/rotem.green/mtm/ex2b/gameTest.cpp",
-  "file": "/home/rotem.green/mtm/ex2b/gameTest.cpp"
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/main.cpp.o -c /home/rotem.green/mtm/ex2b/main.cpp",
+  "file": "/home/rotem.green/mtm/ex2b/main.cpp"
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",

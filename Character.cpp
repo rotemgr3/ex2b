@@ -36,7 +36,7 @@ namespace mtm
     Team Character::getTeam() const 
     {
         return team;
-    };
+    }
 
     bool Character::isDead() const 
     {

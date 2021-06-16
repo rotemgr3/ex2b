@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex2b_test.dir/Medic.cpp.o"
   "CMakeFiles/ex2b_test.dir/Sniper.cpp.o"
   "CMakeFiles/ex2b_test.dir/Soldier.cpp.o"
-  "CMakeFiles/ex2b_test.dir/gameTest.cpp.o"
+  "CMakeFiles/ex2b_test.dir/main.cpp.o"
   "ex2b_test"
   "ex2b_test.pdb"
 )

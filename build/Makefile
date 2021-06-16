@@ -329,32 +329,32 @@ Soldier.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Soldier.cpp.s
 .PHONY : Soldier.cpp.s
 
-gameTest.o: gameTest.cpp.o
+main.o: main.cpp.o
 
-.PHONY : gameTest.o
+.PHONY : main.o
 
 # target to build an object file
-gameTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/gameTest.cpp.o
-.PHONY : gameTest.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-gameTest.i: gameTest.cpp.i
+main.i: main.cpp.i
 
-.PHONY : gameTest.i
+.PHONY : main.i
 
 # target to preprocess a source file
-gameTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/gameTest.cpp.i
-.PHONY : gameTest.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-gameTest.s: gameTest.cpp.s
+main.s: main.cpp.s
 
-.PHONY : gameTest.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-gameTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/gameTest.cpp.s
-.PHONY : gameTest.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -386,9 +386,9 @@ help:
 	@echo "... Soldier.o"
 	@echo "... Soldier.i"
 	@echo "... Soldier.s"
-	@echo "... gameTest.o"
-	@echo "... gameTest.i"
-	@echo "... gameTest.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
