@@ -4,6 +4,6 @@ namespace mtm
 {   
     const char* Exception::what() const noexcept
     {
-        return (error_message + error_type).c_str() ;
+        return error_message;
     }
 }
