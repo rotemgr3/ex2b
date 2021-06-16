@@ -18,8 +18,11 @@ namespace mtm
                         const GridPoint& src_coordinates, const GridPoint& dst_coordinates)
     {
         std::shared_ptr<Character> target = board[dst_coordinates.row][dst_coordinates.col];
-        if(!target){
-            throw mtm::IllegalTarget();//check if Illegal_target ot Cell_empty
+        if(!target && ammo <= 0) {
+            throw mtm::OutOfAmmo(); 
+        }
+        if(!target) {
+            throw mtm::IllegalTarget(); 
         }
         if(target->team == team){
             if(src_coordinates == dst_coordinates){

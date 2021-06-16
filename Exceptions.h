@@ -6,7 +6,16 @@
 #include <string>
 
 namespace mtm
-{
+{   
+    const std::string illegal_argument = "IllegalArgument";
+    const std::string illegal_cell = "IllegalCell";
+    const std::string cell_empty = "CellEmpty";
+    const std::string move_too_far = "MoveTooFar";
+    const std::string cell_occupied = "CellOccupied";
+    const std::string out_of_range = "OutOfRange";
+    const std::string out_of_ammo = "OutOfAmmo";
+    const std::string illegal_target = "IllegalTarget";
+
     class Exception : public std::exception
     {
         private:
@@ -21,49 +30,49 @@ namespace mtm
     class IllegalArgument : public Exception
     {
         public:
-            IllegalArgument() : Exception("IllegalArgument") {};
+            IllegalArgument() : Exception(illegal_argument) {};
             ~IllegalArgument() = default;
     };
     class IllegalCell : public Exception   
     {
         public:
-            IllegalCell() : Exception("IllegalCell") {};
+            IllegalCell() : Exception(illegal_cell) {};
             ~IllegalCell() = default;
     };
     class CellEmpty : public Exception
     {
         public:
-            CellEmpty() : Exception("CellEmpty") {};
+            CellEmpty() : Exception(cell_empty) {};
             ~CellEmpty() = default;
     };
     class MoveTooFar : public Exception
     {
         public:
-            MoveTooFar() : Exception("MoveTooFar") {};
+            MoveTooFar() : Exception(move_too_far) {};
             ~MoveTooFar() = default;
     };
     class CellOccupied : public Exception
     {
         public:
-            CellOccupied() : Exception("CellOccupied") {};
+            CellOccupied() : Exception(cell_occupied) {};
             ~CellOccupied() = default;
     };
     class OutOfRange : public Exception
     {
         public:
-            OutOfRange() : Exception("OutOfRange") {};
+            OutOfRange() : Exception(out_of_range) {};
             ~OutOfRange() = default;
     };
     class OutOfAmmo : public Exception
     {
         public:
-            OutOfAmmo() : Exception("OutOfAmmo") {};
+            OutOfAmmo() : Exception(out_of_ammo) {};
             ~OutOfAmmo() = default;
     };
     class IllegalTarget : public Exception
     {
         public:
-            IllegalTarget() : Exception("IllegalTarget") {};
+            IllegalTarget() : Exception(illegal_target) {};
             ~IllegalTarget() = default;
     };
 }
