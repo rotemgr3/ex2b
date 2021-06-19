@@ -329,32 +329,32 @@ Soldier.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Soldier.cpp.s
 .PHONY : Soldier.cpp.s
 
-main.o: main.cpp.o
+testAlmogIDE/testAlmog.o: testAlmogIDE/testAlmog.cpp.o
 
-.PHONY : main.o
+.PHONY : testAlmogIDE/testAlmog.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.o
-.PHONY : main.cpp.o
+testAlmogIDE/testAlmog.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o
+.PHONY : testAlmogIDE/testAlmog.cpp.o
 
-main.i: main.cpp.i
+testAlmogIDE/testAlmog.i: testAlmogIDE/testAlmog.cpp.i
 
-.PHONY : main.i
+.PHONY : testAlmogIDE/testAlmog.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.i
-.PHONY : main.cpp.i
+testAlmogIDE/testAlmog.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.i
+.PHONY : testAlmogIDE/testAlmog.cpp.i
 
-main.s: main.cpp.s
+testAlmogIDE/testAlmog.s: testAlmogIDE/testAlmog.cpp.s
 
-.PHONY : main.s
+.PHONY : testAlmogIDE/testAlmog.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/main.cpp.s
-.PHONY : main.cpp.s
+testAlmogIDE/testAlmog.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.s
+.PHONY : testAlmogIDE/testAlmog.cpp.s
 
 # Help Target
 help:
@@ -386,9 +386,9 @@ help:
 	@echo "... Soldier.o"
 	@echo "... Soldier.i"
 	@echo "... Soldier.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... testAlmogIDE/testAlmog.o"
+	@echo "... testAlmogIDE/testAlmog.i"
+	@echo "... testAlmogIDE/testAlmog.s"
 .PHONY : help
 
 

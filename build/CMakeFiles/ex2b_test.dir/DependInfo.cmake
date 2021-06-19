@@ -11,7 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rotem.green/mtm/ex2b/Medic.cpp" "/home/rotem.green/mtm/ex2b/build/CMakeFiles/ex2b_test.dir/Medic.cpp.o"
   "/home/rotem.green/mtm/ex2b/Sniper.cpp" "/home/rotem.green/mtm/ex2b/build/CMakeFiles/ex2b_test.dir/Sniper.cpp.o"
   "/home/rotem.green/mtm/ex2b/Soldier.cpp" "/home/rotem.green/mtm/ex2b/build/CMakeFiles/ex2b_test.dir/Soldier.cpp.o"
-  "/home/rotem.green/mtm/ex2b/main.cpp" "/home/rotem.green/mtm/ex2b/build/CMakeFiles/ex2b_test.dir/main.cpp.o"
+  "/home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp" "/home/rotem.green/mtm/ex2b/build/CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

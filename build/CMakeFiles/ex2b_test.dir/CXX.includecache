@@ -14,10 +14,6 @@ string
 cmath
 -
 
-/home/rotem.green/mtm/ex2b/Character.cpp
-Character.h
-/home/rotem.green/mtm/ex2b/Character.h
-
 /home/rotem.green/mtm/ex2b/Character.h
 iostream
 -
@@ -29,10 +25,6 @@ memory
 -
 vector
 -
-
-/home/rotem.green/mtm/ex2b/Exceptions.cpp
-Exceptions.h
-/home/rotem.green/mtm/ex2b/Exceptions.h
 
 /home/rotem.green/mtm/ex2b/Exceptions.h
 exception
@@ -42,12 +34,6 @@ typeinfo
 string
 -
 
-/home/rotem.green/mtm/ex2b/Game.cpp
-Game.h
-/home/rotem.green/mtm/ex2b/Game.h
-iostream
--
-
 /home/rotem.green/mtm/ex2b/Game.h
 iostream
 -
@@ -70,14 +56,6 @@ Sniper.h
 string
 -
 
-/home/rotem.green/mtm/ex2b/Medic.cpp
-Medic.h
-/home/rotem.green/mtm/ex2b/Medic.h
-cmath
--
-vector
--
-
 /home/rotem.green/mtm/ex2b/Medic.h
 iostream
 -
@@ -86,14 +64,6 @@ Auxiliaries.h
 Character.h
 /home/rotem.green/mtm/ex2b/Character.h
 memory
--
-
-/home/rotem.green/mtm/ex2b/Sniper.cpp
-Sniper.h
-/home/rotem.green/mtm/ex2b/Sniper.h
-cmath
--
-vector
 -
 
 /home/rotem.green/mtm/ex2b/Sniper.h
@@ -106,14 +76,6 @@ Character.h
 memory
 -
 
-/home/rotem.green/mtm/ex2b/Soldier.cpp
-Soldier.h
-/home/rotem.green/mtm/ex2b/Soldier.h
-cmath
--
-vector
--
-
 /home/rotem.green/mtm/ex2b/Soldier.h
 iostream
 -
@@ -124,29 +86,15 @@ Character.h
 memory
 -
 
-/home/rotem.green/mtm/ex2b/main.cpp
-Game.h
-/home/rotem.green/mtm/ex2b/Game.h
-Soldier.h
-/home/rotem.green/mtm/ex2b/Soldier.h
-Medic.h
-/home/rotem.green/mtm/ex2b/Medic.h
-Sniper.h
-/home/rotem.green/mtm/ex2b/Sniper.h
-Character.h
-/home/rotem.green/mtm/ex2b/Character.h
-Auxiliaries.h
-/home/rotem.green/mtm/ex2b/Auxiliaries.h
+/home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp
 iostream
+-
+fstream
 -
 cassert
 -
-iostream
--
-cassert
--
-Exceptions.h
+./../Exceptions.h
 /home/rotem.green/mtm/ex2b/Exceptions.h
-Game.h
+./../Game.h
 /home/rotem.green/mtm/ex2b/Game.h
 

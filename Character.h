@@ -125,6 +125,7 @@ namespace mtm
              *      false - otherwise    
             */
             bool isDead() const;
+            //friend class for accessing member variables 
             friend class Soldier;
             friend class Medic;
             friend class Sniper; 
