@@ -44,6 +44,10 @@ namespace mtm
 
             /**
              * attack: medic attack destination coordinates in a given board.
+             *         medic can not attack empty cells.
+             *         if medic attacks a charcter from same team, 
+             *         the medic power will be added to that charcters health.
+             *         otherwise, the target character will loose health points according to medics power.
              *
              * @param board - the board of the game, 2-d vector of shared pointers of character.
              * @param src_coordinates - coordinates of medic.

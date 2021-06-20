@@ -46,6 +46,13 @@ namespace mtm
 
             /**
              * attack: soldier attack destination coordinates in a given board.
+             *         soldier can attack only in straight lines.
+             *         soldier can attack empty cell and cells that have friendly characters.
+             *         soldier cant harm friendly characters.
+             *         enemy that is on destination coordinates will loose health points according to soldier power.
+             *         every enemy that the distance between him and the destination coordinates is at most
+             *         soldier range divided bt three will loose health points 
+             *         according to soldier power divided bt two.
              *
              * @param board - the board of the game, 2-d vector of shared pointers of character.
              * @param src_coordinates - coordinates of soldier.

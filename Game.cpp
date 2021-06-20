@@ -31,7 +31,7 @@ namespace mtm
         Game temp_game(game);
         height = game.height;
         width = game.width;
-        this->board = temp_game.board;
+        this->board = temp_game.board; //using vector assignment
         return *this;
     }
     void Game::addCharacter(const GridPoint& coordinates, std::shared_ptr<Character> character)
@@ -80,6 +80,7 @@ namespace mtm
         if(board[dst_coordinates.row][dst_coordinates.col]){
             throw mtm::CellOccupied();
         }
+        //swap between pointers of source and destination.
         board[src_coordinates.row][src_coordinates.col].swap(board[dst_coordinates.row][dst_coordinates.col]);
     }
     void Game::attack(const GridPoint & src_coordinates, const GridPoint & dst_coordinates)
@@ -98,6 +99,7 @@ namespace mtm
             throw mtm::OutOfRange();
         }
         board[src_coordinates.row][src_coordinates.col]->attack(board, src_coordinates, dst_coordinates);
+        //remove dead characters from board
         this->updateBoard();
     }
     void Game::updateBoard()
@@ -107,7 +109,7 @@ namespace mtm
         for (row = board.begin(); row != board.end(); row++) {
             for (col = row->begin(); col != row->end(); col++) {
                 if((*col) && (*col)->isDead()){
-                    col->reset();
+                    col->reset(); //clean shared pointer
                 }
             }
         }

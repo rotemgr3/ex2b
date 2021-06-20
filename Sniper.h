@@ -48,6 +48,8 @@ namespace mtm
 
             /**
              * attack: sniper attack destination coordinates in a given board.
+             *         sniper can not attack empty cells or friendly chaaracters.
+             *         every third successful attack, snipers power gets doubled for that attack.
              *
              * @param board - the board of the game, 2-d vector of shared pointers of character.
              * @param src_coordinates - coordinates of sniper.
@@ -68,6 +70,8 @@ namespace mtm
 
             /**
              * checkIfTargetIsOutOfRange: check if a target is out of snipers attack range.
+             *                            target distance has to be at least snipers range divided by two,
+             *                            and snipers range at most. 
              *
              * @param distance - the distance from the sniper to the taget.
              * 
