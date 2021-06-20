@@ -329,32 +329,32 @@ Soldier.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/Soldier.cpp.s
 .PHONY : Soldier.cpp.s
 
-testAlmogIDE/testAlmog.o: testAlmogIDE/testAlmog.cpp.o
+game_test_Meron_Shira/game_test_Meron_Shira.o: game_test_Meron_Shira/game_test_Meron_Shira.cpp.o
 
-.PHONY : testAlmogIDE/testAlmog.o
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.o
 
 # target to build an object file
-testAlmogIDE/testAlmog.cpp.o:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o
-.PHONY : testAlmogIDE/testAlmog.cpp.o
+game_test_Meron_Shira/game_test_Meron_Shira.cpp.o:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.cpp.o
 
-testAlmogIDE/testAlmog.i: testAlmogIDE/testAlmog.cpp.i
+game_test_Meron_Shira/game_test_Meron_Shira.i: game_test_Meron_Shira/game_test_Meron_Shira.cpp.i
 
-.PHONY : testAlmogIDE/testAlmog.i
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.i
 
 # target to preprocess a source file
-testAlmogIDE/testAlmog.cpp.i:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.i
-.PHONY : testAlmogIDE/testAlmog.cpp.i
+game_test_Meron_Shira/game_test_Meron_Shira.cpp.i:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.i
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.cpp.i
 
-testAlmogIDE/testAlmog.s: testAlmogIDE/testAlmog.cpp.s
+game_test_Meron_Shira/game_test_Meron_Shira.s: game_test_Meron_Shira/game_test_Meron_Shira.cpp.s
 
-.PHONY : testAlmogIDE/testAlmog.s
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.s
 
 # target to generate assembly for a file
-testAlmogIDE/testAlmog.cpp.s:
-	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.s
-.PHONY : testAlmogIDE/testAlmog.cpp.s
+game_test_Meron_Shira/game_test_Meron_Shira.cpp.s:
+	$(MAKE) -f CMakeFiles/ex2b_test.dir/build.make CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.s
+.PHONY : game_test_Meron_Shira/game_test_Meron_Shira.cpp.s
 
 # Help Target
 help:
@@ -386,9 +386,9 @@ help:
 	@echo "... Soldier.o"
 	@echo "... Soldier.i"
 	@echo "... Soldier.s"
-	@echo "... testAlmogIDE/testAlmog.o"
-	@echo "... testAlmogIDE/testAlmog.i"
-	@echo "... testAlmogIDE/testAlmog.s"
+	@echo "... game_test_Meron_Shira/game_test_Meron_Shira.o"
+	@echo "... game_test_Meron_Shira/game_test_Meron_Shira.i"
+	@echo "... game_test_Meron_Shira/game_test_Meron_Shira.s"
 .PHONY : help
 
 

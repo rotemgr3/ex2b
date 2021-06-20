@@ -39,12 +39,12 @@ CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Exceptions.h
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Soldier.cpp
 CMakeFiles/ex2b_test.dir/Soldier.cpp.o: ../Soldier.h
 
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Auxiliaries.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Character.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Exceptions.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Game.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Medic.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Sniper.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../Soldier.h
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../testAlmogIDE/testAlmog.cpp
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Auxiliaries.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Character.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Exceptions.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Game.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Medic.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Sniper.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../Soldier.h
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../game_test_Meron_Shira/game_test_Meron_Shira.cpp
 

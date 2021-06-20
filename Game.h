@@ -62,7 +62,7 @@ namespace mtm
              *
              * @param type - type of charcter - SOLDIER/MEDIC/SNIPER
              * @param team - team of charcter - POWERLIFTERS/CROSSFITTERS
-             * @param health - number of health points of character. non-negative.
+             * @param health - number of health points of character. positive.
              * @param ammo - ammo supply of character. non-negative.
              * @param range - attack range of character. non-negative.
              * @param power - number of health points of character. non-negative.

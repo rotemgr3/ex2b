@@ -17,7 +17,7 @@ A game related error has occurred: IllegalArgument
 A game related error has occurred: IllegalArgument
 A game related error has occurred: IllegalArgument
 A game related error has occurred: CellOccupied
-A game related error has occurred: OutOfAmmo
+A game related error has occurred: IllegalTarget
 A game related error has occurred: OutOfAmmo
 A game related error has occurred: OutOfAmmo
 A game related error has occurred: IllegalCell

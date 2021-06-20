@@ -87,18 +87,18 @@ CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rotem.green/mtm/ex2b/Auxiliaries.cpp -o CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.s
 
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: CMakeFiles/ex2b_test.dir/flags.make
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o: ../testAlmogIDE/testAlmog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rotem.green/mtm/ex2b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o -c /home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: CMakeFiles/ex2b_test.dir/flags.make
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o: ../game_test_Meron_Shira/game_test_Meron_Shira.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rotem.green/mtm/ex2b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o -c /home/rotem.green/mtm/ex2b/game_test_Meron_Shira/game_test_Meron_Shira.cpp
 
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp > CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.i
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rotem.green/mtm/ex2b/game_test_Meron_Shira/game_test_Meron_Shira.cpp > CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.i
 
-CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp -o CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.s
+CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rotem.green/mtm/ex2b/game_test_Meron_Shira/game_test_Meron_Shira.cpp -o CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.s
 
 CMakeFiles/ex2b_test.dir/Character.cpp.o: CMakeFiles/ex2b_test.dir/flags.make
 CMakeFiles/ex2b_test.dir/Character.cpp.o: ../Character.cpp
@@ -181,7 +181,7 @@ CMakeFiles/ex2b_test.dir/Exceptions.cpp.s: cmake_force
 # Object files for target ex2b_test
 ex2b_test_OBJECTS = \
 "CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.o" \
-"CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o" \
+"CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o" \
 "CMakeFiles/ex2b_test.dir/Character.cpp.o" \
 "CMakeFiles/ex2b_test.dir/Soldier.cpp.o" \
 "CMakeFiles/ex2b_test.dir/Medic.cpp.o" \
@@ -193,7 +193,7 @@ ex2b_test_OBJECTS = \
 ex2b_test_EXTERNAL_OBJECTS =
 
 ex2b_test: CMakeFiles/ex2b_test.dir/Auxiliaries.cpp.o
-ex2b_test: CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o
+ex2b_test: CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o
 ex2b_test: CMakeFiles/ex2b_test.dir/Character.cpp.o
 ex2b_test: CMakeFiles/ex2b_test.dir/Soldier.cpp.o
 ex2b_test: CMakeFiles/ex2b_test.dir/Medic.cpp.o

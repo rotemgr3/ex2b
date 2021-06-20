@@ -6,8 +6,8 @@
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",
-  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/testAlmogIDE/testAlmog.cpp.o -c /home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp",
-  "file": "/home/rotem.green/mtm/ex2b/testAlmogIDE/testAlmog.cpp"
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/ex2b_test.dir/game_test_Meron_Shira/game_test_Meron_Shira.cpp.o -c /home/rotem.green/mtm/ex2b/game_test_Meron_Shira/game_test_Meron_Shira.cpp",
+  "file": "/home/rotem.green/mtm/ex2b/game_test_Meron_Shira/game_test_Meron_Shira.cpp"
 },
 {
   "directory": "/home/rotem.green/mtm/ex2b/build",

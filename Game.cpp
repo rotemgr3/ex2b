@@ -48,7 +48,7 @@ namespace mtm
                                                     units_t health, units_t ammo, 
                                                     units_t range, units_t power)
     {
-        if(health < 0 || range < 0 || ammo < 0 || power < 0) {
+        if(health <= 0 || range < 0 || ammo < 0 || power < 0) {
             throw mtm::IllegalArgument();
         }
         if(type == SOLDIER){
