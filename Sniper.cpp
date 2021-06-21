@@ -8,6 +8,10 @@ namespace mtm
                 Character(health, ammo, range, power, team, power_lifter_sniper, cross_fitters_sniper,
                         sniper_reload_supply, sniper_move_distance), attacks_counter(0)
     {}
+
+    Sniper::Sniper(const Sniper& sniper) : 
+        Character(sniper), attacks_counter(sniper.attacks_counter) 
+    {}
     std::shared_ptr<Character> Sniper::clone() const
     {
         return std::shared_ptr<Character>(new Sniper(*this));

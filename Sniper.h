@@ -43,7 +43,7 @@ namespace mtm
              * @return
              *     new copy of argument sniper.
             */
-            Sniper(const Sniper& sniper) : Character(sniper) {};
+            Sniper(const Sniper& sniper);
             ~Sniper() = default;
 
             /**
